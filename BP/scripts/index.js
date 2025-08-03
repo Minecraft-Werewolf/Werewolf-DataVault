@@ -1,2 +1,5 @@
 import { BehaviorManager } from "./router/behaviorManager";
-BehaviorManager.initialize();
+async function main() {
+    BehaviorManager.initialize();
+}
+main();
