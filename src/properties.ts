@@ -7,15 +7,15 @@ export const properties = {
     metadata: { 
         /** 製作者の名前 */
         authors: [
-            // "静空"
+            "静空"
         ]
     },
     header: {
-        name: "Werewolf-dev-template",
+        name: "Werewolf-DataVault",
         description: "",
         min_engine_version: [ 1,21,90 ],
         version: [ 1,0,0 ],
-        uuid: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+        uuid: "f2ad864a-2775-478b-b408-6de33956e43e"
     },
     modules: [
         {
@@ -23,7 +23,7 @@ export const properties = {
 			language: "javascript",
 			entry: "scripts/index.js",
             version: "header.version",
-            uuid: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+            uuid: "d07c9aeb-7c3b-4e01-ab35-5f174414d54e"
         }
     ],
     dependencies: [
