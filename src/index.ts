@@ -1,3 +1,7 @@
 import { BehaviorManager } from "./router/behaviorManager";
 
-BehaviorManager.initialize();
+async function main(): Promise<void> {
+    BehaviorManager.initialize();
+}
+
+main();
