@@ -3,7 +3,7 @@
   "header": {
     "name": "Werewolf-DataVault",
     "description": "serves as the persistent data vault for the Werewolf game.",
-    "uuid": "c781b75c-caed-4604-b4e7-6c42e0e7dd48",
+    "uuid": "28040000-e17d-4e07-a37c-6ad2d78b1b91",
     "version": [
       1,
       0,
@@ -17,8 +17,10 @@
   },
   "modules": [
     {
-      "type": "resources",
-      "uuid": "164022d6-2bd4-45a7-8ea9-f6ef7c6b2454",
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/index.js",
+      "uuid": "e594bcec-3aa7-46a6-875c-8589fdd2cae7",
       "version": [
         1,
         0,
@@ -28,7 +30,15 @@
   ],
   "dependencies": [
     {
-      "uuid": "28040000-e17d-4e07-a37c-6ad2d78b1b91",
+      "module_name": "@minecraft/server",
+      "version": "2.1.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    },
+    {
+      "uuid": "c781b75c-caed-4604-b4e7-6c42e0e7dd48",
       "version": [
         1,
         0,
