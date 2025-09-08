@@ -15,7 +15,7 @@ export type SemVer = {
  */
 
 export const properties = {
-    id: "kairo-template", # // a-z & 0-9 - _
+    id: "werewolf-datavault", // a-z & 0-9 - _
     metadata: { 
         /** 製作者の名前 */
         authors: [
@@ -23,8 +23,8 @@ export const properties = {
         ]
     },
     header: {
-        name: "Kairo-template", #
-        description: "A starter template for developing Minecraft Bedrock addons that rely on Kairo.", #
+        name: "Werewolf-DataVault",
+        description: "serves as the persistent data vault for the Werewolf game.",
         version: { 
             major: 1, 
             minor: 0, 
@@ -33,13 +33,13 @@ export const properties = {
             // build: "abc123",
         },
         min_engine_version: [ 1,21,100 ],
-        uuid: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" #
+        uuid: "28040000-e17d-4e07-a37c-6ad2d78b1b91"
     },
     resourcepack: {
         name: "Use BP Name",
         description: "Use BP Description",
-        uuid: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", #
-        module_uuid: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", #
+        uuid: "c781b75c-caed-4604-b4e7-6c42e0e7dd48",
+        module_uuid: "164022d6-2bd4-45a7-8ea9-f6ef7c6b2454",
     },
     modules: [
         {
@@ -47,27 +47,27 @@ export const properties = {
 			language: "javascript",
 			entry: "scripts/index.js",
             version: "header.version",
-            uuid: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" #
+            uuid: "e594bcec-3aa7-46a6-875c-8589fdd2cae7"
         }
     ],
     dependencies: [
 		{
 			module_name: "@minecraft/server",
-			version: "2.1.0" #
+			version: "2.1.0"
 		},
 		{
 			module_name: "@minecraft/server-ui",
-			version: "2.0.0" #
+			version: "2.0.0"
 		}
 	],
     /** 前提アドオン */
     requiredAddons: {
-        /**
-         * id: version (string) // "kairo": "1.0.0"
-         */
+        "kairo": "1.0.0-dev.1", // "kairo": "1.0.0"
+        "werewolf-gamemanager": "1.0.0-dev.1"
     },
     tags: [
-        // "stable",
+        "official",
+        "stable",
     ],
 }
 
